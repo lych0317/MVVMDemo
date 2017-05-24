@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="normal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uA-G0-XVO" userLabel="Label0">
+                                <rect key="frame" x="160.5" y="110" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.30802518540000001" blue="0.27774649029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bun-jG-4FL" userLabel="Label1">
+                                <rect key="frame" x="166.5" y="153" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGy-mS-hUa" userLabel="Label2">
+                                <rect key="frame" x="166.5" y="204" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQy-98-Wn4" userLabel="Label3">
+                                <rect key="frame" x="166.5" y="255" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIt-L5-TlC" userLabel="fetch data">
+                                <rect key="frame" x="152.5" y="362" width="70" height="30"/>
+                                <state key="normal" title="fetch data"/>
+                                <connections>
+                                    <action selector="fetchDataAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nuU-bL-9N2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uIt-L5-TlC" firstAttribute="top" secondItem="DQy-98-Wn4" secondAttribute="bottom" constant="86" id="0MP-kG-ovA"/>
+                            <constraint firstItem="uIt-L5-TlC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S3h-xA-asa"/>
+                            <constraint firstItem="bun-jG-4FL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SXp-TU-AAU"/>
+                            <constraint firstItem="9uA-G0-XVO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="dvW-kj-Yym"/>
+                            <constraint firstItem="DQy-98-Wn4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eVb-eS-k3O"/>
+                            <constraint firstItem="DQy-98-Wn4" firstAttribute="top" secondItem="YGy-mS-hUa" secondAttribute="bottom" constant="30" id="ehv-Ov-b2e"/>
+                            <constraint firstItem="bun-jG-4FL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="133" id="j3b-Dl-QrO"/>
+                            <constraint firstItem="9uA-G0-XVO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pqM-en-ieB"/>
+                            <constraint firstItem="YGy-mS-hUa" firstAttribute="top" secondItem="bun-jG-4FL" secondAttribute="bottom" constant="30" id="qfR-DB-q94"/>
+                            <constraint firstItem="YGy-mS-hUa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uTE-0G-ueH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadLabel" destination="9uA-G0-XVO" id="6ri-ys-u9a"/>
+                        <outlet property="nameLabel" destination="bun-jG-4FL" id="Dio-Av-pyF"/>
+                        <outlet property="sexLabel" destination="DQy-98-Wn4" id="Nf8-T8-SCx"/>
+                        <outlet property="universityLabel" destination="YGy-mS-hUa" id="nAc-Ef-Tmi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

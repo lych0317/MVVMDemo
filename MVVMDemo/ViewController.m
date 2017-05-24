@@ -38,4 +38,5 @@
 {
     [self.viewModel fetchUser];
 }
+
 @end

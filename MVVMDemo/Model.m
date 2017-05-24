@@ -7,7 +7,6 @@
 //
 
 #import "Model.h"
-#import "User.h"
 
 @interface Model ()
 
